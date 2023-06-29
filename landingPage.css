@@ -883,16 +883,16 @@ color: #fff;
   margin: 12px;
   height: 8vw;
   width: 19vw;
-  transition: transform 0.5s ease;
 }
 
-.cardM:hover {
-  transform: scale(-1);
+.cardM img:hover {
+  transform: scale(1.1);
 }
 
 .cardM img {
   width: 90%;
   height: 90%;
+  transition: transform 0.5s ease;
 }
 
 .media-heading {
