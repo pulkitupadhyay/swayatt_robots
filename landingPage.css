@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: block;
+  position: sticky;
+  padding: 10px;
+  background: transparent;
+  width: 100%;
+  height: 10%;
+}
+
+.logo {
+  padding: 0;
+  position: relative;
+  top: 10%;
+  left: 2%;
+  height: 5em;
+  width: 5em;
+  display: flex;
+  background-color: rgba(32, 30, 30, 0.4);
+  border-radius: 4vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  display: flex;
+  margin: auto;
+  margin-top: 17%;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: relative;
+  height: 3em;
+  border-radius: 1vw;
+
+  width: 3em;
+  background-color: rgba(32, 30, 30, 0.7);
+}
+
+.logo {
+  display: inline-block;
+}
+
+nav {
+  height: 7vh;
+  /* margin-top: 2vh;
+margin-right: 2vw; */
+}
+
+.navigation {
+  list-style: none;
+  display: inline-block;
+  float: right;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  position: relative;
+  top: 5vh;
+
+  /* background-color: rgba(32, 30, 30, 0.4); */
+  animation: slideInRight 0.5s ease;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInOut 1.5s infinite;
+  font-family: 'Calistoga', cursive;
+}
+
+.navigation li a {
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  font-size: 1.7vw;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.navigation li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.navigation li:hover::before {
+  transform: scaleX(1);
+}
+
+.navigation li:hover a {
+  color: rgb(102, 6, 78);
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.hero {
+  position: relative;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  text-align: start;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 13vh;
+  font-family: 'Calistoga', cursive;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media li img {
+  width: 20px;
+  height: 20px;
+}
+
+.hero {
+  background: transparent;
+  justify-content: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.hero-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.hero-header nav {
+  display: flex;
+  align-items: center;
+}
+
+.hero-header .logo {
+  margin-right: 20px;
+}
+
+.hero-heading {
+  font-size: 6rem;
+  text-align: center;
+  font-family: 'Calistoga', cursive;
+  z-index: 1;
+  animation: levitate 2.3s infinite;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+    color: black;
+  }
+
+  20% {
+    color: rgb(78, 20, 71);
+  }
+
+  50% {
+    transform: translateY(-15px);
+    color: rgb(61, 61, 143);
+  }
+
+  80% {
+    color: rgb(109, 47, 47);
+  }
+
+  100% {
+    transform: translateY(0);
+    color: rgb(58, 121, 58);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+.oHedings {
+  /* border: 2px solid red; */
+  height: 25vh;
+  width: 39vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  flex-direction: column;
+}
+
+.oHedings h3 {
+  display: flex;
+  padding: 0;
+  font-family: 'Noto', Sans;
+  font-size: 3vw;
+  margin: auto;
+  animation-delay: 3s;
+  /* position: initial; */
+}
+
+/*     
+.head1{
+animation: goAside 3.3s ease infinite;
+
+} */
+
+@keyframes goAside {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(-29.5vw, 4.8vh);
+    /* transform: translateY(8vw); */
+
+    opacity: 1;
+    color: rgb(61, 61, 143);
+  }
+
+  100% {
+    transform: translate(-29.5vw, 4.8vh);
+
+    opacity: 1;
+    color: rgb(58, 121, 58);
+  }
+}
+
+@keyframes comeAside {
+  0% {
+    transform: translate(-29.5vw, 4.8vh);
+
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(-29.5vw, 4.8vh);
+    /* transform: translateY(8vw); */
+
+    opacity: 1;
+    color: rgb(61, 61, 143);
+  }
+
+  100% {
+    transform: translateX(0);
+
+    opacity: 1;
+    color: rgb(58, 121, 58);
+  }
+}
+
+@keyframes goAside1 {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(24.2vw, -18.5vh);
+    /* transform: translateY(8vw); */
+
+    opacity: 1;
+    color: rgb(61, 61, 143);
+  }
+
+  100% {
+    transform: translate(24.2vw, -18.5vh);
+
+    opacity: 1;
+    color: rgb(58, 121, 58);
+  }
+}
+
+@keyframes comeAside1 {
+  0% {
+    transform: translate(24.2vw, -18.5vh);
+
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(24.2vw, -18.5vh);
+    /* transform: translateY(8vw); */
+
+    opacity: 1;
+    color: rgb(61, 61, 143);
+  }
+
+  100% {
+    transform: translateX(0);
+
+    opacity: 1;
+    color: rgb(58, 121, 58);
+  }
+}
+
+/* .head2{
+animation: goUP 3s ease infinite;
+} */
+
+@keyframes goUP {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-7vh);
+    opacity: 1;
+    color: rgb(61, 61, 143);
+  }
+
+  100% {
+    transform: translateY(-7vh);
+    opacity: 1;
+    color: rgb(58, 121, 58);
+  }
+}
+
+@keyframes goDown {
+  0% {
+    transform: translateY(-7vh);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-7vh);
+    opacity: 1;
+    color: rgb(61, 61, 143);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    color: rgb(58, 121, 58);
+  }
+}
+
+.oHedings h3:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+/* New CSS for Nav Animation */
+.navigation li {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInOut 2s infinite;
+}
+
+.navigation li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.navigation li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.navigation li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.navigation li:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.navigation li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.navigation li:hover::before {
+  transform: scaleX(1);
+}
+
+/* .navigation li:hover a {
+color: #fff;
+} */
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+}
+
+/* for button */
+
+.button-container {
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  margin-left: auto;
+  /* transform: translateX(-50%); */
+  text-align: center;
+}
+
+.animated-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  border-radius: 50px;
+  top: 6vw;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  color: white;
+
+  background-color: #ff6f00;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.animated-button:hover::before {
+  top: -50%;
+  opacity: 1;
+}
+
+.animated-button span {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* for mission */
+.mission {
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  height: 38.6rem;
+  border: 2px solid #c4c0c0;
+  /* margin: auto; */
+  /* bottom: 13px; */
+  position: relative;
+  top: 0px;
+  margin-top: 0px;
+}
+
+.card {
+  width: 40vw;
+  height: 16vw;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  border: 2px solid #c4c0c0;
+  align-items: center;
+  /* animation: cardAnimation 1s ease-in-out infinite alternate; */
+}
+
+@keyframes cardAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes sideAnimation {
+  0% {
+    transform: translateX(-200vw);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardAnimation1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes sideAnimation1 {
+  0% {
+    transform: translateX(200vw);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card1 {
+  bottom: 7rem;
+  left: 12vw;
+  /* animation: sideAnimation 1s ease-in-out; */
+  /* animation: cardAnimation 1s ease-in-out infinite alternate; */
+}
+
+.card3 {
+  bottom: 7rem;
+  right: 12vw;
+}
+
+.card2 {
+  top: 9rem;
+  animation: cardAnimation1 1s ease-in-out infinite alternate;
+}
+
+/* .mission h1 {
+    text-align: center;
+
+} */
+
+.pridict {
+  position: absolute;
+  top: 0;
+  left: 36vw;
+  text-align: center;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  font-family: 'Calistoga', cursive;
+  font-weight: 100;
+  /* width: 10vw; */
+  font-size: 4.5vw;
+}
+
+.bgImg1 {
+  display: inline-block;
+  position: absolute;
+  height: 23vw;
+  width: 23vw;
+  left: 2vw;
+  top: 2vw;
+  animation: spin 2s linear infinite;
+}
+
+.bgImg2 {
+  display: inline-block;
+  position: absolute;
+  height: 23vw;
+  width: 23vw;
+  right: 2vw;
+  top: 22vw;
+  animation: spin 3s linear infinite;
+}
+
+.bgImg3 {
+  display: inline-block;
+  position: absolute;
+  height: 23vw;
+  width: 23vw;
+  right: 40vw;
+  top: 3vw;
+  animation: pingpong 1s linear infinite;
+}
+
+.bgImg4 {
+  display: inline-block;
+  position: absolute;
+  height: 13vw;
+  width: 25vw;
+  right: -25vw;
+  bottom: 0vw;
+  animation: carGo 4s linear infinite;
+
+  /* animation: pingpong 1s linear infinite; */
+}
+
+.bgImg5 {
+  display: inline-block;
+  position: absolute;
+  height: 45vw;
+  width: 100vw;
+  /* right: -25vw; */
+  /* bottom: 0vw; */
+  overflow: hidden;
+  /* animation: carGo 4s linear infinite; */
+
+  /* animation: pingpong 1s linear infinite; */
+}
+
+.bgImg6 {
+  display: inline-block;
+  position: absolute;
+  height: 13vw;
+  width: 25vw;
+  right: 2vw;
+  top: 0vw;
+  /* animation: carGo 4s linear infinite; */
+
+  animation: pingpong 1s linear infinite;
+}
+
+.bgImg7 {
+  display: inline-block;
+  position: absolute;
+  height: 13vw;
+  width: 25vw;
+  right: 2vw;
+  top: 0vw;
+  /* animation: carGo 4s linear infinite; */
+
+  /* animation: pingpong 1s linear infinite; */
+}
+
+.bgImg8 {
+  display: inline-block;
+  position: absolute;
+  height: 13vw;
+  width: 13vw;
+  left: 8vw;
+  bottom: 2vw;
+  /* animation: carGo 4s linear infinite; */
+
+  animation: pingpong 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pingpong {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(40deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes carGo {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-130vw);
+  }
+}
+
+@keyframes tools {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-130vw);
+  }
+}
+
+.card img {
+  margin-top: 10px;
+  position: relative;
+  width: 9vw;
+  height: 9vw;
+  /* flex-wrap: wrap; */
+}
+
+.card1 img {
+  margin-top: 10px;
+  position: relative;
+  width: 12vw;
+  height: 9vw;
+  /* flex-wrap: wrap; */
+}
+
+.card3 img {
+  margin-top: 10px;
+  position: relative;
+  width: 12vw;
+  height: 9vw;
+  /* flex-wrap: wrap; */
+}
+
+.card p {
+  font-size: 1.5rem;
+  position: relative;
+  top: 1vw;
+  font-family: 'Calistoga', cursive;
+
+  /* flex-wrap: wrap; */
+  text-align: center;
+}
+
+/* .mission {
+    background-image: url('./resourses/mountain-978569_640.webp'), url('./resourses/cranium-2099120_1280.webp'), url('./resourses/cogwheel-303465_640.webp');
+    background-position: top left, top right, bottom center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: cover, contain, auto;
+} */
+/* 
+/* meida */
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+  height: 30vw;
+}
+
+/* .media-heading {
+
+    /* flex-direction: column; */
+/* position: relative;
+    display: block;
+
+} */
+.sec1 {
+  display: flex;
+  flex-direction: row;
+  /* margin-bottom: 3vw; */
+}
+
+.sec2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7vw;
+}
+
+.cardM {
+  /* flex-direction: row; */
+  /* Adjust this value to control the width of each card */
+  padding: 10px;
+  border: 2px solid rgb(153, 151, 151);
+  text-align: center;
+  margin: 12px;
+  height: 8vw;
+  width: 19vw;
+  transition: transform 0.5s ease;
+}
+
+.cardM:hover {
+  transform: scale(-1);
+}
+
+.cardM img {
+  width: 90%;
+  height: 90%;
+}
+
+.media-heading {
+  font-size: 4vw;
+  font-family: 'Calistoga', cursive;
+  margin-top: 2vw;
+
+  /* Apply rotation animation */
+}
+
+/* for introdiv */
+.introdiv {
+  text-align: center;
+  /* background-color: #f1f1f1; */
+  padding: 5px;
+}
+
+.introdiv {
+  /* width: 200px;
+    height: 200px; */
+  background: linear-gradient(to bottom right, red 50%, black 50%);
+  /* transform: skew(-45deg); */
+}
+
+.introdiv h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.person-info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1vw;
+  transition: transform 0.3s ease;
+}
+
+.person-info img:hover {
+  transform: scale(1.1);
+}
+
+.person-description {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sanjeevsharma {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-description h2 {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 1vh;
+  color: #f1f1f1;
+}
+
+.sanjeev {
+  animation: sanjeevGoLeft 2s ease-in-out infinite;
+}
+
+.person-description p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f1f1f1;
+  margin-bottom: 2px;
+  /* border: 2px solid white; */
+}
+
+.peras {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Calistoga', cursive;
+  margin: auto;
+  /* margin-bottom: vw; */
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* footer */
+footer {
+  background-color: #202020;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-media img {
+  width: 25px;
+  height: 25px;
+}
+/* 
+footer p {
+  color: #999;
+  font-size: 14px;
+} */
+
+/* foooter */
+
+.footer-overlay {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 2vh;
+  left: 16vw;
+}
+.footer-div {
+  height: 17vw;
+  background-color: rgba(32, 30, 30);
+  display: flex;
+  position: relative;
+  /* background: transparent; */
+}
+.footer-div p {
+  bottom: 0px;
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-right: 28px;
+  margin-bottom: 3vw;
+  justify-content: flex-end;
+  color: wheat;
+}
+
+.rocket {
+  display: inline-block;
+  position: absolute;
+  height: 17vw;
+  width: 12vw;
+  left: 2.5vw;
+  /* right: -25vw; */
+  bottom: 1vw;
+  animation: cardAnimation1 1s ease-in-out infinite alternate;
+  /* animation: cardAnimation1 1s linear infinite; */
+}
+.social {
+  display: inline-block;
+  position: absolute;
+  height: 14vw;
+  width: 30vw;
+  right: 2.5vw;
+  top: 2.5vh;
+}
+
+.footer-overlay span {
+  font-size: 1.7vw;
+  margin-top: 1.7vw;
+  text-align: center;
+  color: wheat;
+  font-family: 'Noto', Sans;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+
+  /* text-align: ; */
+}
+.footer-overlay span:hover {
+  transform: scale(1.3);
+}
