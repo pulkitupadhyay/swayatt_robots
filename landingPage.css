@@ -637,7 +637,7 @@ footer {
   width: 23vw;
   left: 2vw;
   top: 2vw;
-  animation: spin 2s linear infinite;
+  animation: spin 6s linear infinite;
 }
 
 .bgImg2 {
@@ -647,7 +647,7 @@ footer {
   width: 23vw;
   right: 2vw;
   top: 22vw;
-  animation: spin 3s linear infinite;
+  animation: spin 6s linear infinite;
 }
 
 .bgImg3 {
@@ -657,7 +657,7 @@ footer {
   width: 23vw;
   right: 40vw;
   top: 3vw;
-  animation: pingpong 1s linear infinite;
+  animation: pingpong 7s linear infinite;
 }
 
 .bgImg4 {
@@ -667,7 +667,7 @@ footer {
   width: 25vw;
   right: -25vw;
   bottom: 0vw;
-  animation: carGo 4s linear infinite;
+  animation: carGo 8s linear infinite;
 }
 
 .bgImg5 {
@@ -686,7 +686,7 @@ footer {
   right: 2vw;
   top: 0vw;
 
-  animation: pingpong 1s linear infinite;
+  animation: pingpong 4s linear infinite;
 }
 
 .bgImg7 {
@@ -706,7 +706,7 @@ footer {
   left: 8vw;
   bottom: 2vw;
 
-  animation: pingpong 1s linear infinite;
+  animation: pingpong 3s linear infinite;
 }
 
 @keyframes spin {
