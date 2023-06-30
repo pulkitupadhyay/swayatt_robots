@@ -58,7 +58,6 @@
         <img class="bgImg6" style="opacity:0.5;" src="./resourses/hammer-148417_640.webp" alt="">
         <img class="bgImg8" style="opacity:0.5;" src="./resourses/half-gear-27692_640.png" alt="">
 
-        <!-- <img class="bgImg7" src="./resourses/hammer-148417_640.webp" alt=""> -->
 
         <h1 class="pridict">! We Predict !</h1>
 
@@ -144,7 +143,6 @@
 
     <div class="footer-div">
 
-        <!-- <img class="thecar" src="./resourses/ford-mustang-146580_1280.webp" alt=""> -->
         <img class="rocket" src="./resourses/rocket2.png" alt="">
         <img src="./resourses/swaayatt.png" alt="">
 
@@ -165,47 +163,35 @@
         document.querySelector('.animated-button').addEventListener('click', () => {
             window.scrollTo({
                 top: 632,
-                behavior: 'smooth' // Optionally, you can enable smooth scrolling
+                behavior: 'smooth'
             });
 
-            // var card1 = document.querySelector('.card1');
-            // // function doani() {
-            // //     card1.style.animation = "cardAnimation 1s ease-in-out infinite alternate"
-            // // }
-            // card1.style.animation = "sideAnimation 1s ease-in-out"
-            // // card1.removeProperty('animation');
-            // setTimeout(doani, 1000)
+
 
         })
 
         window.addEventListener('scroll', function () {
             var scrollPosition = window.pageYOffset;
             console.log(scrollPosition)
-            // Check the scroll position and trigger the operation
             if (scrollPosition >= 550 && scrollPosition <= 600) {
-                // Perform your operation here
                 var card1 = document.querySelector('.card1');
                 var card3 = document.querySelector('.card3');
 
                 card1.style.animation = "sideAnimation 1s ease-in-out"
                 card3.style.animation = "sideAnimation1 1s ease-in-out"
 
-                // card1.removeProperty('animation');
                 setTimeout(doani, 1000)
                 function doani() {
                     card1.style.animation = "cardAnimation 1s ease-in-out infinite alternate"
                     card3.style.animation = "cardAnimation1 1s ease-in-out infinite alternate"
 
                 }
-                // ... perform additional actions or function calls
             }
 
         });
         window.removeEventListener('scroll', () => console.log('removerd'));
 
-        // card1.addEventListener('animationend', function () {
-        //     card1.classList.add('cardAnimation');
-        // });
+
 
 
 

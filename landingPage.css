@@ -54,8 +54,6 @@ header {
 
 nav {
   height: 7vh;
-  /* margin-top: 2vh;
-margin-right: 2vw; */
 }
 
 .navigation {
@@ -264,7 +262,6 @@ footer {
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
 .oHedings {
-  /* border: 2px solid red; */
   height: 25vh;
   width: 39vw;
   display: flex;
@@ -286,14 +283,7 @@ footer {
   font-size: 3vw;
   margin: auto;
   animation-delay: 3s;
-  /* position: initial; */
 }
-
-/*     
-.head1{
-animation: goAside 3.3s ease infinite;
-
-} */
 
 @keyframes goAside {
   0% {
@@ -303,7 +293,6 @@ animation: goAside 3.3s ease infinite;
 
   50% {
     transform: translate(-29.5vw, 4.8vh);
-    /* transform: translateY(8vw); */
 
     opacity: 1;
     color: rgb(61, 61, 143);
@@ -326,7 +315,6 @@ animation: goAside 3.3s ease infinite;
 
   50% {
     transform: translate(-29.5vw, 4.8vh);
-    /* transform: translateY(8vw); */
 
     opacity: 1;
     color: rgb(61, 61, 143);
@@ -348,7 +336,6 @@ animation: goAside 3.3s ease infinite;
 
   50% {
     transform: translate(24.2vw, -18.5vh);
-    /* transform: translateY(8vw); */
 
     opacity: 1;
     color: rgb(61, 61, 143);
@@ -384,10 +371,6 @@ animation: goAside 3.3s ease infinite;
     color: rgb(58, 121, 58);
   }
 }
-
-/* .head2{
-animation: goUP 3s ease infinite;
-} */
 
 @keyframes goUP {
   0% {
@@ -431,7 +414,6 @@ animation: goUP 3s ease infinite;
   margin-top: 0.5rem;
 }
 
-/* New CSS for Nav Animation */
 .navigation li {
   display: inline-block;
   margin-left: 10px;
@@ -474,10 +456,6 @@ animation: goUP 3s ease infinite;
   transform: scaleX(1);
 }
 
-/* .navigation li:hover a {
-color: #fff;
-} */
-
 @keyframes fadeInOut {
   0% {
     opacity: 0.8;
@@ -495,14 +473,11 @@ color: #fff;
   }
 }
 
-/* for button */
-
 .button-container {
   position: absolute;
   bottom: 20%;
   display: flex;
   margin-left: auto;
-  /* transform: translateX(-50%); */
   text-align: center;
 }
 
@@ -562,15 +537,11 @@ color: #fff;
   }
 }
 
-/* for mission */
 .mission {
   display: flex;
-  /* justify-content: center;
-    align-items: center; */
+
   height: 38.6rem;
   border: 2px solid #c4c0c0;
-  /* margin: auto; */
-  /* bottom: 13px; */
   position: relative;
   top: 0px;
   margin-top: 0px;
@@ -588,7 +559,6 @@ color: #fff;
   justify-content: flex-start;
   border: 2px solid #c4c0c0;
   align-items: center;
-  /* animation: cardAnimation 1s ease-in-out infinite alternate; */
 }
 
 @keyframes cardAnimation {
@@ -634,8 +604,6 @@ color: #fff;
 .card1 {
   bottom: 7rem;
   left: 12vw;
-  /* animation: sideAnimation 1s ease-in-out; */
-  /* animation: cardAnimation 1s ease-in-out infinite alternate; */
 }
 
 .card3 {
@@ -647,11 +615,6 @@ color: #fff;
   top: 9rem;
   animation: cardAnimation1 1s ease-in-out infinite alternate;
 }
-
-/* .mission h1 {
-    text-align: center;
-
-} */
 
 .pridict {
   position: absolute;
@@ -705,8 +668,6 @@ color: #fff;
   right: -25vw;
   bottom: 0vw;
   animation: carGo 4s linear infinite;
-
-  /* animation: pingpong 1s linear infinite; */
 }
 
 .bgImg5 {
@@ -714,12 +675,7 @@ color: #fff;
   position: absolute;
   height: 45vw;
   width: 100vw;
-  /* right: -25vw; */
-  /* bottom: 0vw; */
   overflow: hidden;
-  /* animation: carGo 4s linear infinite; */
-
-  /* animation: pingpong 1s linear infinite; */
 }
 
 .bgImg6 {
@@ -729,7 +685,6 @@ color: #fff;
   width: 25vw;
   right: 2vw;
   top: 0vw;
-  /* animation: carGo 4s linear infinite; */
 
   animation: pingpong 1s linear infinite;
 }
@@ -741,9 +696,6 @@ color: #fff;
   width: 25vw;
   right: 2vw;
   top: 0vw;
-  /* animation: carGo 4s linear infinite; */
-
-  /* animation: pingpong 1s linear infinite; */
 }
 
 .bgImg8 {
@@ -753,7 +705,6 @@ color: #fff;
   width: 13vw;
   left: 8vw;
   bottom: 2vw;
-  /* animation: carGo 4s linear infinite; */
 
   animation: pingpong 1s linear infinite;
 }
@@ -807,7 +758,6 @@ color: #fff;
   position: relative;
   width: 9vw;
   height: 9vw;
-  /* flex-wrap: wrap; */
 }
 
 .card1 img {
@@ -815,7 +765,6 @@ color: #fff;
   position: relative;
   width: 12vw;
   height: 9vw;
-  /* flex-wrap: wrap; */
 }
 
 .card3 img {
@@ -823,7 +772,6 @@ color: #fff;
   position: relative;
   width: 12vw;
   height: 9vw;
-  /* flex-wrap: wrap; */
 }
 
 .card p {
@@ -832,18 +780,8 @@ color: #fff;
   top: 1vw;
   font-family: 'Calistoga', cursive;
 
-  /* flex-wrap: wrap; */
   text-align: center;
 }
-
-/* .mission {
-    background-image: url('./resourses/mountain-978569_640.webp'), url('./resourses/cranium-2099120_1280.webp'), url('./resourses/cogwheel-303465_640.webp');
-    background-position: top left, top right, bottom center;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: cover, contain, auto;
-} */
-/* 
-/* meida */
 
 .media {
   display: flex;
@@ -855,17 +793,9 @@ color: #fff;
   height: 30vw;
 }
 
-/* .media-heading {
-
-    /* flex-direction: column; */
-/* position: relative;
-    display: block;
-
-} */
 .sec1 {
   display: flex;
   flex-direction: row;
-  /* margin-bottom: 3vw; */
 }
 
 .sec2 {
@@ -875,8 +805,6 @@ color: #fff;
 }
 
 .cardM {
-  /* flex-direction: row; */
-  /* Adjust this value to control the width of each card */
   padding: 10px;
   border: 2px solid rgb(153, 151, 151);
   text-align: center;
@@ -899,22 +827,16 @@ color: #fff;
   font-size: 4vw;
   font-family: 'Calistoga', cursive;
   margin-top: 2vw;
-
-  /* Apply rotation animation */
 }
 
 /* for introdiv */
 .introdiv {
   text-align: center;
-  /* background-color: #f1f1f1; */
   padding: 5px;
 }
 
 .introdiv {
-  /* width: 200px;
-    height: 200px; */
   background: linear-gradient(to bottom right, red 50%, black 50%);
-  /* transform: skew(-45deg); */
 }
 
 .introdiv h1 {
@@ -973,7 +895,6 @@ color: #fff;
   line-height: 1.5;
   color: #f1f1f1;
   margin-bottom: 2px;
-  /* border: 2px solid white; */
 }
 
 .peras {
@@ -981,7 +902,6 @@ color: #fff;
   flex-direction: column;
   font-family: 'Calistoga', cursive;
   margin: auto;
-  /* margin-bottom: vw; */
   width: 100%;
   align-items: flex-start;
 }
@@ -1009,13 +929,6 @@ footer {
   width: 25px;
   height: 25px;
 }
-/* 
-footer p {
-  color: #999;
-  font-size: 14px;
-} */
-
-/* foooter */
 
 .footer-overlay {
   display: flex;
@@ -1070,8 +983,6 @@ footer p {
   font-family: 'Noto', Sans;
   transition: transform 0.5s ease;
   cursor: pointer;
-
-  /* text-align: ; */
 }
 .footer-overlay span:hover {
   transform: scale(1.3);
